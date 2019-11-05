@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
  public class MainActivity extends AppCompatActivity {
@@ -40,5 +41,7 @@ import android.widget.TextView;
         };
 
         showFactButton.setOnClickListener(listener);
+
+        Toast.makeText(this, "Yay! our activity was created", Toast.LENGTH_SHORT).show();
     }
 }
